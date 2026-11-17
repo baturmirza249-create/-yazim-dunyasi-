@@ -1,5 +1,5 @@
 import { db } from "./firebase-config.js";
-import { collection, addDbData, addDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 // Yeni Soru Ekleme Fonksiyonu
 export async function addNewQuestion(questionData) {
