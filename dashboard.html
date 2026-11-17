@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yazım Dünyası - Ana Panel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+    <!-- Üst Bilgi ve Çıkış Alanı -->
+    <header>
+      <div>
+        <h2>Hoş Geldin, <span id="userName">Kullanıcı</span></h2>
+        <p style="color: #7f8c8d; font-size: 14px;">Yazım Dünyası Çalışma Paneli</p>
+      </div>
+      <button id="logoutBtn" class="logout-btn">Çıkış Yap</button>
+    </header>
+
+    <!-- Ana İçerik / Soru Çözüm Alanı (İleride genişletilecek) -->
+    <main>
+      <section style="margin-bottom: 20px;">
+        <h3>İçerikler ve Testler</h3>
+        <p>Burada soru çözümleri, Türkçe kuralları ve modüller yer alacak.</p>
+      </section>
+
+      <!-- Sadece Admin Giriş Yaptığında Görünecek Yönetim Paneli -->
+      <div id="adminSection" class="admin-section">
+        <h3>Yönetici Paneli (Sadece Sana Görünür)</h3>
+        <form id="questionForm">
+          <input type="text" id="questionText" placeholder="Soru metnini yazın..." required>
+          <input type="text" id="opt1" placeholder="A Şıkkı" required>
+          <input type="text" id="opt2" placeholder="B Şıkkı" required>
+          <input type="text" id="opt3" placeholder="C Şıkkı" required>
+          <input type="text" id="opt4" placeholder="D Şıkkı" required>
+          <input type="number" id="correctOpt" placeholder="Doğru Şık (0: A, 1: B, 2: C, 3: D)" min="0" max="3" required>
+          <button type="submit">Yeni Soru Ekle</button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <!-- Ana JavaScript Modülü -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
